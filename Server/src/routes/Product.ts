@@ -4,6 +4,8 @@ const router = express.Router()
 
 // Can receive req.query or req.params
 router.get('/', Services.get)
+router.get('/:id', Services.getById)
+
 router.delete('/', Services.delete)
 
 // Can receive req.body req.query or req.params

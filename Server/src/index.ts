@@ -5,6 +5,8 @@ import cors from 'cors'
 import morgan from 'morgan'
 import helmet from 'helmet'
 import ProductRouter from './routes/Product'
+import UserRouter from './routes/User'
+import CartRouter from './routes/Cart'
 import { connectDatabase } from './common/connectDatabase'
 
 dotenv.config()
@@ -18,9 +20,11 @@ app.use(helmet())
 app.use(cors())
 app.use(express.json())
 
-app.use('/api/product', ProductRouter)
+connectDatabase();
 
-connectDatabase()
+app.use('/api/product', ProductRouter)
+app.use('/api/user', UserRouter)
+app.use('/api/cart', CartRouter)
 
 http.createServer(app).listen(PORT, () => {
   console.log(`Server listen on port ${PORT}`)

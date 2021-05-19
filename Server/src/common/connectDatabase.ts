@@ -9,9 +9,9 @@ export const connectDatabase = (): void => {
     useNewUrlParser: true,
     useCreateIndex: true
   })
-    .then(async () => {
-      console.log('Database connection created')
-    }).catch((err) => {
-      console.log(err)
-    })
+  .then(async () => {
+    console.log('Database connection created')
+  }).catch((err) => {
+    console.log(err)
+  })
 }

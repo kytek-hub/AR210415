@@ -16,6 +16,7 @@
     "@types/cors": "^2.8.10",
     "@types/morgan": "^1.9.2",
     "@types/node": "^12.7.2",
+    "@types/redis": "^2.8.28",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^2.21.0",
     "eslint": "^7.25.0",
@@ -36,6 +37,7 @@
     "helmet": "^4.6.0",
     "http": "^0.0.1-security",
     "mongoose": "^5.12.7",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "redis": "^3.1.2"
   }
 }
